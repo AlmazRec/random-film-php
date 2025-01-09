@@ -17,7 +17,7 @@ function randomMovie()
     ]);
 
     $rand = rand(0, 9);
-    $moviesData = json_decode($res->getBody(), true);
+    $filmData = json_decode($res->getBody(), true);
 
-    return $moviesData['docs'][$rand];
+    return $filmData['docs'][$rand];
 }
